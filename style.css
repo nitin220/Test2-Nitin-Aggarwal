@@ -1,0 +1,57 @@
+
+.FirstCol {
+  background-color: rgb(168, 173, 181);
+  height: 100%;
+}
+.row {height: 900px}
+
+@media screen and (max-width: 767px) {
+  .firstCol {
+    height: auto;
+    padding: 15px;
+  }
+  .row {height: auto;}
+}
+
+.SecondCol{
+  height: 100%;
+}
+
+h4,h5{
+  color: white;
+  font-family: monospace;
+}
+#ProfileImage{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+
+
+.carousel {
+
+    height: 40%;
+}
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+    width: 100%
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+#BottomDiv{
+  height: 60%;
+}
+
+.size{
+font-size:36px;
+}

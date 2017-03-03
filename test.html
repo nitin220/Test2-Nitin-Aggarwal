@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+
+          $.ajax({
+            url:"https://public-api.wordpress.com/rest/v1/sites/dotnetask.wordpress.com",
+            success: function(data){
+              $('#name').text("Name is : "+data.name);
+              $('#id').text("Id is: "+data.ID);
+              $('#description').text("Description is: "+data.description);
+              $('#subscribers_count').text("Subscribers_count is: "+data.subscribers_count);
+
+
+            },
+            error: function(){
+              $('#name').text("Name is :");
+              $('#id').text("Id is: ");
+              $('#description').text("Description is: ");
+              $('#subscribers_count').text("Subscribers_count is: ");
+            }
+          })
+
+      $('#Div1').on({
+        mouseenter:function () {
+          $(this).css("background-color","white")
+        },
+        mouseleave:function () {
+          $(this).css("background-color","rgb(168, 173, 181)")
+        }
+      })
+
+      $('#Div2').on({
+        mouseenter:function () {
+          $(this).css("background-color","white")
+        },
+        mouseleave:function () {
+          $(this).css("background-color","rgb(168, 173, 181)")
+        }
+      })
+
+      $('#Div3').on({
+        mouseenter:function () {
+          $(this).css("background-color","white")
+        },
+        mouseleave:function () {
+          $(this).css("background-color","rgb(168, 173, 181)")
+        }
+      })
+
+      $('#Div4').on({
+        mouseenter:function () {
+          $(this).css("background-color","white")
+        },
+        mouseleave:function () {
+          $(this).css("background-color","rgb(168, 173, 181)")
+        }
+      })
+
+      });
+  </script>
+  <link rel = "stylesheet" href = "style.css">
+  <title>Profile</title>
+</head>
+<body>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 FirstCol">
+      <div>
+    <img src="image1.jpg" alt="No Image" id="ProfileImage">
+    <h4><p id="name"></p></h4>
+    <h4><p id="id"></p></h4>
+    <h4><p id="description"></p></h4>
+    <h4><p id="subscribers_count"></p></h4>
+  </div>
+  <div class="" id="Div1">
+          <span class="glyphicon glyphicon-education "></span> Education
+  </div>
+  <div class=""id="Div2">
+      <span class="glyphicon glyphicon-search "></span> Search me on Google
+  </div>
+  <div class="" id="Div3">
+    <i class="fa fa-whatsapp " ></i> 9999950386
+  </div>
+  <div class="" id="Div4">
+
+  </div>
+  <ul  class=" list-inline social">
+    <li>
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fa fa-facebook-square size" ></i></a>
+    </li >
+    <li >
+      <a href="https://twitter.com/login" target="_blank">
+      <i class="fa fa-twitter size" style="background-color:#55acee"></i></a>
+    </li>
+    <li >
+      <a href="https://plus.google.com/collections/featured?hl=en" target="_blank">
+      <i class="fa fa-google-plus-official size" style="background-color:rgb(213, 19, 48)"></i></a>
+    <li>
+      <a href="https://github.com/" target="_blank">
+      <i class="fa fa-github size" style="background-color:black"></i></a>
+    </li>
+    <li>
+      <a href="https://in.pinterest.com/" target="_blank">
+      <i class="fa fa-pinterest-square size" style="background-color:black"></i></a>
+    </li>
+  </ul>
+    </div>
+    <div class="col-sm-9 SecondCol">
+
+      <div id="firstCrousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+     <li data-target="#firstCrousel" data-slide-to="0" class="active"></li>
+     <li data-target="#firstCrousel" data-slide-to="1"></li>
+     <li data-target="#firstCrousel" data-slide-to="2"></li>
+     <li data-target="#firstCrousel" data-slide-to="3"></li>
+     <li data-target="#firstCrousel" data-slide-to="4"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+     <div class="item active">
+        <img src="image1.jpg" alt="no image" style="height:100%;"class="fill">
+        <div class="carousel-caption">
+          <h1>Simple Taughts</h1>
+        </div>
+      </div>
+     <div class="item">
+        <img src="image2.jpg" alt="no image" style="height:100%;" class="fill">
+        <div class="carousel-caption">
+          <h1>Conecting Taughts</h1>
+        </div>
+     </div>
+     <div class="item">
+        <img src="image3.jpg" alt="no image" style="height:100%;" class="fill">
+        <div class="carousel-caption">
+          <h1>For The Success</h1>
+        </div>
+     </div>
+     <div class="item">
+        <img src="image4.jpg" alt="no image" style="height:100%;" class="fill">
+        <div class="carousel-caption">
+          <h1>A Good Team</h1>
+        </div>
+     </div>
+     <div class="item">
+        <img src="image5.jpg" alt="no image" style="height:100%;" class="fill">
+        <div class="carousel-caption">
+          <h1>Is Every Thing</h1>
+        </div>
+     </div>
+  </div>
+  <a class="left carousel-control" href="#firstCrousel" data-slide="prev">
+      <span class="icon-prev" aria-hidden="true"></span>
+
+    </a>
+    <a class="right carousel-control" href="#firstCrousel" role="button" data-slide="next">
+          <span class="icon-next" aria-hidden="true"></span>
+
+    </a>
+  </div>
+  <div id="BottomDiv">
+    <img src="image6.jpg" alt="">
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
